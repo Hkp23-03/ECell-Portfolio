@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="/maomao.jpg">
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            color:white;
+            text-align: center;
+            background: url("bg.avif") no-repeat center center fixed;
+            background-size: cover;
+        }
+        header{
+            padding: 30px 20px;
+            background-color: rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+
+        }
+        nav{
+            background-color: rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            position: sticky;
+            top:0;
+            z-index: 10;
+            backdrop-filter: blur(6px);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin:0;
+            padding:0;
+        }
+        nav ul li a:hover{
+            color: #ffdf80;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            margin: 60px auto;
+            width: 85%;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0  30px rgba(0,0,0,0.3);
+        }
+        .container img{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+            box-shadow: 0 0 25px rgba(255,255,255, 0.3) ;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .container img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(255,255,255, 0.7);
+        }
+        .about {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: left;
+            color: #f9f9f9;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+        }
+        .about h2{
+            color: #fff9d6;
+        }
+        .about p{
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        footer {
+            background-color: rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+footer h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+      box-shadow: 0 0 15px rgba(255, 223, 128, 0.8);
+      background-color: rgba(255, 255, 255, 0.1);
+    } 
+
+    footer p {
+      margin-top: 25px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Harshika's Portfolio</h1>
+    <h2>Welcome to my Portfolio</h2>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="art_gallery.html">About Me</a></li>
+        <li><a href="javacal.html">My Project</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <img src="meghbili1.png" alt="Ghibli Art">
+    <div class="about">
+        <h2>Hello Readers!</h2>
+        <p>I am <strong>Harshika Pal</strong>, a passionate coder and tech enthusiast from Lucknow , currently pursuing <strong>B.Tech in CSE(AI)</strong> at KIET Group of Institutions, Delhi -NCR.</p>
+        <p>Welcome to my portfolio website, where I showcase my projects, skills, and experiences in the world of technology. I love exploring new technologies and applying them to solve real-world problems.</p>
+        <p>I am also a member and associate in 3 clubs of my college which includes ECell - a technical domain member, Technocrats - a cybersecurity member and DevUps - learning DSA/CP.</p>
+    </div>
+  </div>
+  <footer>
+    <h3>Connect with me</h3>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/harshika-pal-767652381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Hkp23-03" target="blank" title="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+                </a>
+            
+        </div>
+        <p>© 2025 Harshika Pal | All Rights Reserved</p>
+  </footer>
+
+        
+    
+
+
+    
+</body>
+</html>
